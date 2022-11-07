@@ -1,14 +1,10 @@
 import styled from 'styled-components';
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Section from './components/Section';
+import Home from './components/Home';
 function App() {
   return (
     <Container>
-        <Header/>
-        <Section/>
-        <Footer/>
+       <Home/>
     </Container>
   );
 }

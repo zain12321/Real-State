@@ -3,7 +3,9 @@ import { Container } from './styles'
 
 function Footer() {
   return (
-    <Container>Footer</Container>
+    <Container>
+      
+    </Container>
   )
 }
 
