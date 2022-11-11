@@ -161,3 +161,22 @@ font-family: 'Inter';
   line-height: 16px;
   align-items: center;
   `
+
+
+
+
+
+ export const HeadingHeading10 = `
+ font-family: 'Inter';
+  font-weight: 600;
+  font-size: 21.41px;
+  line-height: 29.98px;
+  text-items: left;
+ `
+ export const Button = `
+ font-family: 'Inter';
+ font-weight: 400;
+ font-size: 14.95px;
+ line-height: 23.98px;
+ text-items: center;
+ `

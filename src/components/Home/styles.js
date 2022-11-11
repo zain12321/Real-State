@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components"
 import home from "../../assets/images/Home.png"
-import { bodyLarge400, bodyRegular400, bodySmall500, display, HeadingHeading5 } from "../../assets/typography"
-import { gray100, gray400, grayWhite, primary100, primary500, primary700 } from "../../common/styles"
+import { bodyLarge400, bodyRegular400, bodyRegular500, bodySmall500, display, HeadingHeading5,
+	 HeadingHeading4, HeadingHeading1 } from "../../assets/typography"
+import { gray100, gray400, grayWhite, primary100, primary500, primary700, primary800 } from "../../common/styles"
 
 export const Container = styled.div``
 export const Wrapper = styled.div`
@@ -16,6 +17,7 @@ export const Wrapper = styled.div`
 	@media (max-width: 550px) {
 		height: 90vw;
 	}
+	
 `
 export const Section = styled.div`
 	background-color: rgba(6, 48, 83, 0.6);
@@ -26,6 +28,7 @@ export const Section = styled.div`
 	@media (max-width: 550px) {
 		height: 100vw;
 	}
+	
 `
 
 export const Content = styled.div`
@@ -38,6 +41,7 @@ export const Content = styled.div`
 	@media (max-width: 1050px) {
 		margin: 30px auto;
 	}
+
 `
 export const P = styled.p`
 	color: ${primary100};
@@ -83,9 +87,9 @@ export const Button = styled.div`
 		`}
 	.poly {
 		margin-top: 40px;
-		margin-left: 10px;
+		margin-left: 3px;
 		position: absolute;
-		position: fixed;
+		top: 10;
 	}
 `
 
@@ -94,7 +98,7 @@ export const Div = styled.div`
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 4px;
 	max-width: 1556px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	margin: 13px 150px;
 	position: absolute;
 	display: grid;
@@ -106,13 +110,19 @@ export const Div = styled.div`
 	}
 
 	@media (max-width: 600px) {
-		margin: 10px 60px;
-		grid-template-columns: auto;
+		margin: 10px 0px;
+		display: flex;
+		flex-direction: column;
+		margin-top: 140px;
 	}
 
 	@media (max-width: 1000px) {
 		margin: 10px 90px;
-		grid-template-columns: auto auto;
+		grid-template-columns: auto auto auto;
+	}
+	@media (max-width: 770px) {
+		margin: 10px 130px;
+		grid-template-columns: auto  auto;
 	}
 `
 
@@ -133,7 +143,7 @@ export const Card = styled.div`
 	border-right: 1px solid ${gray100};
 	padding-left: 20px;
 	padding-right: 20px;
-	height: 70px;
+	height: 60px;
 `
 
 export const Search = styled.div`
@@ -144,8 +154,114 @@ export const Search = styled.div`
 	margin: 20px 100px;
 	border-radius: 4px;
 	text-align: center;
-	margin-top: 45px;
+	margin-top: 35px;
+	${bodyRegular500};
+	color: ${grayWhite};
 	@media (max-width: 1248px) {
 		margin: 20px 30px;
 	}
+`
+export const Tag  = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+  justify-content: center;
+  align-items: center;
+`
+export const Box  = styled.div`
+display: flex;
+position: relative;
+border-radius: 8px; 
+
+.image{
+width: 780px;
+height: 241px;
+border-radius: 8px;
+object-fit: cover 
+
+
+}
+@media (max-width: 1200px){
+	.image{
+		width: 380px;
+height: 241px;
+	}
+}
+
+.images{
+width: 380px ;
+height: 241px;
+border-radius: 8px; 
+margin-left: 20px;
+}
+`
+export const Title = styled.p`
+position: absolute;
+top: 20px;
+left: 35px;
+${HeadingHeading4};
+color: ${grayWhite};
+ ` 
+ export const Box1 = styled.div`
+position: relative;
+border-radius: 8px;
+ ` 
+
+ export const Text  = styled.div`
+ position: absolute;
+top: 60px;
+left: 35px;
+color: ${grayWhite};
+${bodyRegular400};
+
+
+`
+export const Icon  = styled.div`
+position: absolute;
+top: 160px;
+left: 35px;
+`
+
+export const Set  = styled.div`
+display: flex;
+align-items: center;
+margin: 0px 80px;
+@media (max-width: 1200px){
+	display: none;
+}
+`
+
+
+
+export const Select = styled.div`
+background-color: ${primary500};
+margin: 30px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 40px;
+width: 220px;
+margin-top: 40px;
+`
+export const Btn = styled.div`
+${bodyRegular500};
+color: ${grayWhite};
+`
+export const Item = styled.h1`
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 80px;
+`
+export const Desc = styled.h2`
+${HeadingHeading1};
+color: ${primary800};
+${props => props.primary && css`
+       color: ${gray400};
+       ${bodyLarge400};
+       margin-top: 10px;
+       max-width: 696px;
+       text-align: center;
+`}
 `

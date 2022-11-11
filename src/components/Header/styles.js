@@ -73,13 +73,12 @@ justify-content: space-between;
 export const Logo = styled.div`
 display: flex;
 align-items: center;
-
 ` 
 export const RightButton = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-width: 60%;
+width: 70%;
 @media (max-width: 1088px ){
 width: 70%;}
 @media (max-width: 840px ){
@@ -104,8 +103,6 @@ color: ${primary50};
  ${Heading7};
 }
 ` 
-
-
 export const Button = styled.div`
 ${bodySmall400};
 cursor: pointer;

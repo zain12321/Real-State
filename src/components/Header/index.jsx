@@ -9,6 +9,7 @@ import { ReactComponent as BeSvg } from '../../assets/images/be.svg'
 import { ReactComponent as LineSvg } from '../../assets/images/line.svg'
 import { ReactComponent as PhoneSvg } from '../../assets/images/phone.svg'
 import { ReactComponent as LogoSvg } from '../../assets/images/logo.svg'
+import { Link } from 'react-router-dom'
 
 
 function Header() {
@@ -48,8 +49,10 @@ function Header() {
 				</RightIcon>
 			</TopBar>
 			<Navbar>
+			
 				<Logo>
-					<LogoSvg />
+				<Link to='/'><LogoSvg /></Link>
+					
 					<Item>
 						<span className='reis'>REIS</span>
 						<span className='real'>Real State</span>
@@ -65,6 +68,12 @@ function Header() {
 					<Button>
 						OUR AGENT
 					</Button>
+					<Link to='section'>
+					<Button>
+					PROPERTIES
+					</Button>
+					</Link>
+					
 					<Button>
 						GALLERY
 					</Button>
