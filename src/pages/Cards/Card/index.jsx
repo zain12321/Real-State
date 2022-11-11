@@ -10,6 +10,7 @@ import Person2 from '../../../assets/images/per2.png'
 import Person3 from '../../../assets/images/per3.png'
 import Home1 from '../../../assets/images/Page1.png'
 import Home2 from '../../../assets/images/Page2.png'
+import Home3 from '../../../assets/images/Page3.png'
 
 
 function Card() {
@@ -41,7 +42,7 @@ function Card() {
 
         </Wrapper>
     </Select>
-        <Cards image={Home2} person={Person3}/>
+        <Cards image={Home3} person={Person3}/>
 
     </Container>
   )
