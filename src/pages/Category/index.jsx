@@ -12,7 +12,8 @@ import Card6 from '../../assets/images/picture6.png'
 function Category() {
   return (
     <Container>
-       <Orders/> <Latest className="latest"
+       <Orders/>
+        <Latest className="latest"
         /> 
          <Main>
         <HomeCards image={Person1} picture={Card4} />

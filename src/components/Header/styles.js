@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import {grayWhite, primary100,primary50} from '../../common/styles'
-import {bodySmall400, Heading6, Heading7} from '../../assets/typography'
+import {grayBlack, grayWhite, primary100,primary50} from '../../common/styles'
+import {bodySmall400, Heading6, Heading7, HeadingHeading3, HeadingHeading5} from '../../assets/typography'
 
 export const Container = styled.div `
   display: flex;
@@ -69,6 +69,10 @@ justify-content: space-between;
 @media (max-width: 1000px){
    padding: 5px ;
    }
+   .model{
+    width: 100%;
+    height: 100%;
+   }
 ` 
 export const Logo = styled.div`
 display: flex;
@@ -84,7 +88,7 @@ width: 70%;}
 @media (max-width: 840px ){
 width: 85%;
 }
-@media (max-width: 720px ){
+@media (max-width: 790px ){
 display: none;
 }
 `
@@ -107,6 +111,7 @@ export const Button = styled.div`
 ${bodySmall400};
 cursor: pointer;
 color: ${grayWhite};
+
 ${props => props.border && css`
 border: 1px solid ${grayWhite};
 padding: 12px 24px;
@@ -116,4 +121,41 @@ border-radius: 4px;
     display: none;
   }
   `}
+
 `
+
+export const Hamburger = styled.div`
+display: none;
+@media (max-width: 790px){
+  display: inline;
+  color: ${grayWhite};
+  }
+  .menu{
+  height: 30px;
+  width: 30px;
+  }
+  .Close{
+  height: 50px;
+  width: 50px;
+  }
+`
+
+
+export const UL = styled.div`
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding: 30px;
+   text-decoration: none;
+`
+
+export const LI = styled.div`
+ color: ${grayBlack};
+ height: 40px;
+ width: full;
+ text-align: center;
+ ${HeadingHeading5};
+`
+
+
+

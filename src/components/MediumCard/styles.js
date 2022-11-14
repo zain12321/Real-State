@@ -70,6 +70,5 @@ ${bodyLarge400};
 color: ${grayWhite};
 @media (max-width: 390px) {
 margin-top: 3px;
-
 	}
 `

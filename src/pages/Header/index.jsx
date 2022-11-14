@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, TopBar, Icon, H1, RightIcon, P, LeftIcon, Logo, Navbar, RightButton, Item, Button } from './styles'
+import React, { useState } from 'react'
+import { Container, TopBar, Icon, H1, RightIcon, P, LeftIcon, Logo, Navbar, RightButton, Item, Button, Hamburger, UL } from './styles'
 import { ReactComponent as FacebookSvg } from '../../assets/images/facebook.svg'
 import { ReactComponent as HomeSvg } from '../../assets/images/home.svg'
 import { ReactComponent as BallSvg } from '../../assets/images/ball.svg'
@@ -10,9 +10,20 @@ import { ReactComponent as LineSvg } from '../../assets/images/line.svg'
 import { ReactComponent as PhoneSvg } from '../../assets/images/phone.svg'
 import { ReactComponent as FooterLogo } from '../../assets/images/Footer_logo.svg'
 import { Link } from 'react-router-dom'
-
-
+import { HiMenuAlt1 } from 'react-icons/hi';
+import { SlClose } from 'react-icons/sl';
+import Model from 'react-modal';
+import Menu from "../../components/Menu";
 function Header() {
+	const [modalIsOpen,setModalIsOpen] = useState(false);
+
+	const setModalIsOpenToTrue =()=>{
+		setModalIsOpen(true)
+	}
+  
+	const setModalIsOpenToFalse =()=>{
+		setModalIsOpen(false)
+	}
 	return (
 		<Container>
 			<TopBar>
@@ -90,6 +101,15 @@ function Header() {
 						ADD LISTING
 					</Button>
 				</RightButton>
+				<Hamburger  onClick={setModalIsOpenToTrue}>
+					<HiMenuAlt1 className='menu'/>
+					</Hamburger>
+					<Model className='model' isOpen={modalIsOpen}>
+					<UL onClick={setModalIsOpenToFalse}>
+					 <SlClose className='Close'/>
+					</UL>
+					   <Menu />
+					</Model>
 			</Navbar>
 		</Container>
 	)

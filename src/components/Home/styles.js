@@ -41,7 +41,7 @@ export const Content = styled.div`
 	justify-content: center;
 	text-align: center;
 	@media (max-width: 1050px) {
-		margin: 10px auto;
+		margin: 5px auto;
 	}
 
 `
@@ -55,6 +55,9 @@ export const P = styled.p`
 		font-size: 14px;
 	margin-top: 5px;
 
+	}
+	@media (max-width: 400px) {
+display: none;
 	}
 `
 export const H1 = styled.h1`
@@ -107,7 +110,7 @@ export const Div = styled.div`
 	margin: 13px 150px;
 	position: absolute;
 	display: grid;
-	vertical-align: middle;
+	${'' /* vertical-align: middle; */}
 	grid-template-columns: auto auto auto auto;
 	@media (max-width: 700px) {
 		margin: 13px 20px;

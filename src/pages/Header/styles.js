@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { grayWhite, primary100, primary500, primary700, primary900} from '../../common/styles'
-import { bodySmall400, bodySmall600, Heading6, Heading7} from '../../assets/typography'
+import { grayBlack, grayWhite, primary100, primary500, primary700, primary900} from '../../common/styles'
+import { bodySmall400, bodySmall600, Heading6, Heading7, HeadingHeading5} from '../../assets/typography'
 
 export const Container = styled.div `
   display: flex;
@@ -82,7 +82,7 @@ width: 70%;}
 @media (max-width: 840px ){
 width: 85%;
 }
-@media (max-width: 720px ){
+@media (max-width: 790px ){
 display: none;
 }
 `
@@ -127,3 +127,41 @@ border-radius: 4px;
   `}
 
 `
+
+
+
+export const Hamburger = styled.div`
+display: none;
+@media (max-width: 790px){
+  display: inline;
+  color: ${grayBlack};
+  }
+  .menu{
+  height: 30px;
+  width: 30px;
+  }
+  .Close{
+  height: 50px;
+  width: 50px;
+  }
+`
+
+
+export const UL = styled.div`
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding: 30px;
+   text-decoration: none;
+`
+
+export const LI = styled.div`
+ color: ${grayBlack};
+ height: 40px;
+ width: full;
+ text-align: center;
+ ${HeadingHeading5};
+`
+
+
+
