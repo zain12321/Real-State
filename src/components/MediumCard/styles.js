@@ -12,6 +12,9 @@ ${bodyLarge400};
 color: ${grayWhite};
 text-align: center;
 margin-top: 20px;
+@media (max-width: 390px) {
+	margin-top: 0px;
+	}
 `
 export const H1 = styled.h1`
 ${HeadingHeading1};
@@ -25,7 +28,9 @@ justify-content: center;
 flex-direction: column;
 padding: 20px;
 margin-top: 70px;
-
+@media (max-width: 390px) {
+	margin-top: 4px;
+	}
 `
 
 
@@ -36,11 +41,12 @@ export const Wrapper = styled.div`
 	background-size: cover;
     margin-top: 40px;
 	height: 30vw;
+	overflow: hidden;
 	@media (max-width: 1248px) {
 		height: 60vw;
 	}
 	@media (max-width: 550px) {
-		height: 90vw;
+		height: 100vw;
 	}
 	
 `
@@ -62,4 +68,8 @@ margin-top: 30px;
 border-radius: 4px;
 ${bodyLarge400};
 color: ${grayWhite};
+@media (max-width: 390px) {
+margin-top: 3px;
+
+	}
 `

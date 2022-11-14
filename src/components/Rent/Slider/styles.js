@@ -27,7 +27,7 @@ background-color: rgba(59, 77, 129, 0.2);
 `
 export const Main = styled.div`
 margin-left: 5px;
-width: 345px;
+width: 420px;
 margin-top: 110px;
 display: flex;
 align-items: center;

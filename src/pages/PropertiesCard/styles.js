@@ -13,11 +13,9 @@ ${bodyLarge400};
 color: ${grayWhite};
 text-align: center;
 margin-top: 20px;
-
 `
 export const H1 = styled.h1`
 ${HeadingHeading1};
-
 color: ${grayWhite};
 `
 export const Content = styled.div`
@@ -27,7 +25,9 @@ justify-content: center;
 flex-direction: column;
 padding: 20px;
 margin-top: 70px;
-
+@media (max-width: 900px){
+margin-top: 30px;
+}
 `
 
 
@@ -40,10 +40,12 @@ export const Wrapper = styled.div`
 	@media (max-width: 1248px) {
 		height: 24vw;
 	}
-	@media (max-width: 550px) {
+	@media (max-width: 600px) {
 		height: 35vw;
 	}
-	
+	@media (max-width: 500px) {
+		height: 65vw;
+	}
 `
 export const Section = styled.div`
 	background-color: rgba(6, 48, 83, 0.6);
@@ -51,9 +53,11 @@ export const Section = styled.div`
 	@media (max-width: 1248px) {
 		height: 24vw;
 	}
-	@media (max-width: 550px) {
+	@media (max-width: 600px) {
 		height: 350vw;
 	}
-	
+	@media (max-width: 500px) {
+		height: 65vw;
+	}
 
 `

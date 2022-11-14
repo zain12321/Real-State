@@ -35,9 +35,18 @@ algn-items: center;
 margin:  70px 40px;
 grid-template-columns: repeat(4, 1fr);
 grid-gap: 10px;
-@media (max-width: 1200px){
-    display: flex;
-    flex-direction: column;
+@media (max-width: 1100px){
+  grid-template-columns: repeat(3, 1fr);
+
+}
+@media (max-width: 900px){
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+@media (max-width: 900px){
+display: flex;
+flex-direction: column;
 }
 
 `
@@ -49,6 +58,7 @@ padding: 30px;
 display: flex;
 flex-direction: column;
 background-color: ${grayWhite};
+
   `
 
 export const H1 = styled.h1`

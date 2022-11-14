@@ -32,7 +32,7 @@ display: flex;
 position: relative;
 border-radius: 8px; 
 .images{
-width: 381px ;
+width: 381px;
 height: 241px;
 border-radius: 8px; 
 margin-left: 20px;

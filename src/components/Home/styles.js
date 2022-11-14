@@ -11,6 +11,8 @@ export const Wrapper = styled.div`
 	object-fit: contain;
 	background-size: cover;
 	height: 40vw;
+
+	overflow: hidden;
 	@media (max-width: 1248px) {
 		height: 60vw;
 	}
@@ -39,7 +41,7 @@ export const Content = styled.div`
 	justify-content: center;
 	text-align: center;
 	@media (max-width: 1050px) {
-		margin: 30px auto;
+		margin: 10px auto;
 	}
 
 `
@@ -51,6 +53,8 @@ export const P = styled.p`
 
 	@media (max-width: 1050px) {
 		font-size: 14px;
+	margin-top: 5px;
+
 	}
 `
 export const H1 = styled.h1`
@@ -77,6 +81,7 @@ export const Button = styled.div`
 	color: ${grayWhite};
 	padding: 20px;
 	border-radius: 4px;
+
 	${bodySmall500};
 	${props =>
 		props.scale &&
@@ -144,6 +149,12 @@ export const Card = styled.div`
 	padding-left: 20px;
 	padding-right: 20px;
 	height: 60px;
+
+	@media (max-width: 840px){
+		padding:5px;
+	margin-top: 10px;
+		height: 80px;
+	}
 `
 
 export const Search = styled.div`

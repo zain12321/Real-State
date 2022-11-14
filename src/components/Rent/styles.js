@@ -9,9 +9,16 @@ margin-left: 40px;
 display: grid;
 grid-gap: 10px;
 grid-template-columns: repeat(5, 1fr);
-@media(max-width: 1000px){
+@media(max-width: 1100px){
+    grid-template-columns: repeat(4, 1fr);
+
+}
+@media(max-width: 800px){
     display: flex;
     flex-direction: column;
+    padding: 10px;
+margin-left: 0px;
+
 }
 `
 

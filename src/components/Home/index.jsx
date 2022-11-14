@@ -42,9 +42,6 @@ import Rent from "../Rent"
 import MediumCard from "../MediumCard"
 import Footer from "../Footer"
 
-
-
-
 function Home() {
 	return (
 		<Container>
@@ -104,9 +101,6 @@ function Home() {
 			<Properties image={whiteHouse} title={"Washington"} desc={"25 listings"} />
 			<Properties image={House1} title={"Franklin"} desc={"25 listings"} />
 			<Properties image={House2} title={"Clinton"} desc={"25 listings"} />
-		
-			{/* <Properties image={home} title={"House 2"} desc={"sookpokdfefoefo"} /> */}
-
 			</Main>
 			<Set>
 			<Box>
