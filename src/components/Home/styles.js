@@ -110,7 +110,6 @@ export const Div = styled.div`
 	margin: 13px 150px;
 	position: absolute;
 	display: grid;
-	${'' /* vertical-align: middle; */}
 	grid-template-columns: auto auto auto auto;
 	@media (max-width: 700px) {
 		margin: 13px 20px;

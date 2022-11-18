@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import {grayBlack, grayWhite, primary100,primary50} from '../../common/styles'
-import {bodySmall400, Heading6, Heading7, HeadingHeading3, HeadingHeading5} from '../../assets/typography'
+import {bodySmall400, Heading6, Heading7, HeadingHeading5} from '../../assets/typography'
 
 export const Container = styled.div `
   display: flex;

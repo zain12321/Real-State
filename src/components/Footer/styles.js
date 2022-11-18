@@ -4,12 +4,12 @@ import { gray500, gray700, grayBlack, primary500 } from "../../common/styles";
 
 
 export const Container = styled.div `
-padding: 50px 100px;
-display: flex;
+    padding: 50px 100px;
+    display: flex;
 @media (max-width: 1000px){
     display: flex;
     flex-direction: column;
-padding: 50px 40px;
+    padding: 50px 40px;
 
 }
 `
@@ -31,7 +31,6 @@ padding-left: 5px;
 ${Heading7};
 }
 `
-
 export const Wrapper = styled.div `
 `
 export const H1 = styled.h1 `
@@ -56,11 +55,9 @@ color: ${gray700};
 margin-top: 10px;
 margin-bottom: 10px;
 `
-
 export const Icons = styled.div `
 margin-top: 15px;
 .footer{
-    margin-left: 8px;
-
+    margin-left: 8px
 }
 `

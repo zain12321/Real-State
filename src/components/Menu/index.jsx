@@ -7,7 +7,7 @@ function Menu() {
   return (
     <Container>
     	<Link to='/'>
-        <LI color>
+        <LI>
 						HOME
 					</LI>
                     </Link>

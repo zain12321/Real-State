@@ -2,12 +2,10 @@ import styled, { css } from "styled-components";
 import { bodyLarge500, bodyRegular400, bodyRegular600, HeadingHeading2, HeadingHeading4 } from "../../assets/typography";
 import { gray400, gray700, primary500 } from "../../common/styles";
 
-
 export const Container = styled.div`
 margin: 30px 100px;
 @media (max-width: 900px){
     margin: 30px 20px;
-
 }
 `
 export const Main = styled.div`
@@ -22,17 +20,11 @@ export const Div = styled.h2`
 position: absolute;
 left: 193px;
 top: 200px;
-
 @media (max-width: 1200px){
 left: 5px;
 top: 200px;
-    
 }
 `
-export const H2 = styled.h2`
-
-`
-
 export const Wrapper = styled.div`
 display: flex;
 @media (max-width: 1200px){
@@ -49,28 +41,22 @@ display: flex;
 }
 .icons{
     padding-left: 90px;
-
 }
-
-
 `
 export const Name= styled.div`
     ${bodyLarge500};
     color: ${gray700};
    padding-left: 10px;
 `
-
 export const Image = styled.div`
 overflow: hidden;
 position: relative;
 .Home{
    height: 350px;
    width: 640px;
-
    border-radius: 12px;
 }
 `
-
 export const P = styled.p`
 width: 506px;
 color: ${gray400};
@@ -84,7 +70,6 @@ padding-top: 20px;
 export const Price = styled.div`
 ${HeadingHeading2};
 color: ${primary500};
-
 padding-top: 10px;
 `
 

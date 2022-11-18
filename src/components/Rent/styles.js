@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
-import { primary200, primary500 } from "../../common/styles";
+import { Button } from "../../assets/typography";
+import { grayWhite, primary200, primary500 } from "../../common/styles";
 
 export const Container = styled.div`
 margin-top: 60px;
@@ -37,4 +38,15 @@ ${props => props.primary && css`
 background-color: ${primary500};
 margin-left: 30px;
 `}
+`
+
+export const P = styled.p`
+background-color: ${primary500};
+text-align: center; 
+color: ${grayWhite};
+height: 20px;
+padding: 5px;
+${Button};
+overflow: hidden;
+
 `

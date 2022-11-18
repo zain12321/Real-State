@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Container, TopBar, Icon, H1, RightIcon, P, LeftIcon, Logo, Navbar, RightButton, Item, Button, Hamburger, UL } from './styles'
+import { Container, TopBar, Icon, H1, RightIcon, P, LeftIcon, Logo, Navbar, RightButton, Item,
+	 Button, Hamburger, UL } from './styles'
 import { ReactComponent as FacebookSvg } from '../../assets/images/facebook.svg'
 import { ReactComponent as HomeSvg } from '../../assets/images/home.svg'
 import { ReactComponent as BallSvg } from '../../assets/images/ball.svg'

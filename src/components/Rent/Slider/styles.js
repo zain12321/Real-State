@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { bodyLarge500, bodyRegular500 } from "../../../assets/typography";
-import { grayWhite, primary500 } from "../../../common/styles";
+import { grayWhite } from "../../../common/styles";
 
 export const Container = styled.div`
 margin-top: 20px;
@@ -40,16 +40,10 @@ align-items: center;
 
 export const Button = styled.div`
 text-align: center; 
-height: 40px;
-width: 80px;
+height: 50px;
+width: 90px;
 margin: 10px;
-`
-export const P = styled.p`
-background-color: ${primary500};
-text-align: center; 
-color: ${grayWhite};
-height: 20px;
-padding: 5px;
+border-radius: 2.14px;
 `
 
 export const Section = styled.div`

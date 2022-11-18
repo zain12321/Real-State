@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container } from '../styles'
-import { Button, Div, Main, P, Section,  Span, Text, Wrapper } from './styles'
+import { Container, P } from '../styles'
+import { Button, Div, Main, Section,  Span, Text, Wrapper } from './styles'
 import { ReactComponent as LocationSvg } from '../../../assets/images/pin.svg'
 import { ReactComponent as FourArrow } from "../../../assets/images/FourArrow.svg"
 

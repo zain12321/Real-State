@@ -39,11 +39,9 @@ function Card() {
  ultrices nulla blandit...readmore.</P>
 <Price>$ 590,693</Price>
         </Main>
-
         </Wrapper>
     </Select>
         <Cards image={Home3} person={Person3}/>
-
     </Container>
   )
 }
